@@ -10,11 +10,9 @@
     tools:showIn="@layout/activity_twitter_page"
     tools:context="com.example.patri_000.mainblotspot.TwitterPage">
 
-    <TextClock
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp" />
+        android:id="@+id/listViewTwitter" />
+
 </RelativeLayout>
