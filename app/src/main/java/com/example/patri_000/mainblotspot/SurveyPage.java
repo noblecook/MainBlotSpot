@@ -56,7 +56,7 @@ public class SurveyPage extends AppCompatActivity {
         Toast.makeText(SurveyPage.this,thankYouText, Toast.LENGTH_LONG).show();
 
 
-
+        // TODO:  ADD ERROR Condition for button when not selected.
          if(myView.getId() == R.id.buttonOk)
         {
             Intent myIntent = new Intent(SurveyPage.this, TwitterPage.class);
