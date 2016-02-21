@@ -43,7 +43,7 @@ public class SurveyPage extends AppCompatActivity {
     public void onOkButtonClick(View myView)
     {
         String button = getRadioButtonText();
-        String thankYouText = "I see that you've selected " + button + " Good Choice!";
+        String thankYouText = "I see that you've selected " + button + "." + " Excellent choice!";
         Toast.makeText(SurveyPage.this,thankYouText, Toast.LENGTH_LONG).show();
          if(myView.getId() == R.id.buttonOk)
         {
