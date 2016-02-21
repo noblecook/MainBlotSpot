@@ -29,36 +29,36 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Football "
-            android:id="@+id/radioButtonFootBall"
+            android:text="Indie/ Alternative"
+            android:id="@+id/radioButtonIndie"
             android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Basketball"
-            android:id="@+id/radioButtonBasketBall"
+            android:text="Rap"
+            android:id="@+id/radioButtonRap"
             android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Baseball"
-            android:id="@+id/radioButtonBaseBall"
+            android:text="Rock"
+            android:id="@+id/radioButtonRock"
             android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Soccer"
-            android:id="@+id/radioButtonSoccer"
+            android:text="EDM"
+            android:id="@+id/radioButtonEDM"
             android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hockey"
-            android:id="@+id/radioButtonHockey"
+            android:text="Pop"
+            android:id="@+id/radioButtonPop"
             android:checked="false" />
 
         <Button
