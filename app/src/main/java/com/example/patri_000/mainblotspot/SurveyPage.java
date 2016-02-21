@@ -50,10 +50,12 @@ public class SurveyPage extends AppCompatActivity {
     public void onOkButtonClick(View myView)
     {
         String thankYouText = "I see you selected " + getRadioButtonText() + " Good Choice!";
-        Toast.makeText(SurveyPage.this,thankYouText, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(SurveyPage.this,thankYouText, Toast.LENGTH_SHORT).show();
          if(myView.getId() == R.id.buttonOk)
         {
             Intent myIntent = new Intent(SurveyPage.this, TwitterPage.class);
+            myIntent.putExtra("pkgName", thankYouText);
+            myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(myIntent);
         }
 

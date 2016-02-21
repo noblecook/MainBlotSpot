@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
@@ -34,6 +35,15 @@ public class TwitterPage extends AppCompatActivity {
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_twitter_page);
 
+        // INFO FROM PREVIOUS PAGE
+        Bundle p = getIntent().getExtras();
+        String yourPreviousPzl =p.getString("pkgName");
+        Toast.makeText(TwitterPage.this, "Look, I am on the Twitter Page", Toast.LENGTH_SHORT).show();
+        Toast.makeText(TwitterPage.this, yourPreviousPzl, Toast.LENGTH_SHORT).show();
+        Toast.makeText(TwitterPage.this, "Look, I Finished!!! ", Toast.LENGTH_SHORT).show();
+
+
+
         // -------- TWITTER BEGIN ---------------------//
 
         // TODO: Use a more specific parent
@@ -44,7 +54,7 @@ public class TwitterPage extends AppCompatActivity {
             @Override
             public void success(Result<Tweet> result) {
                 TweetView tweetView = new TweetView(TwitterPage.this, result.data);
-                parentView.addView(tweetView);
+                //parentView.addView(tweetView);
             }
 
             @Override
