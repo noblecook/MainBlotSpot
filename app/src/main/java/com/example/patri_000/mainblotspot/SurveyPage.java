@@ -6,7 +6,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -27,14 +26,7 @@ public class SurveyPage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -51,12 +43,8 @@ public class SurveyPage extends AppCompatActivity {
     public void onOkButtonClick(View myView)
     {
         String button = getRadioButtonText();
-        String thankYouText = "I see you selected " + button + " Good Choice!";
-
+        String thankYouText = "I see that you've selected " + button + " Good Choice!";
         Toast.makeText(SurveyPage.this,thankYouText, Toast.LENGTH_LONG).show();
-
-
-        // TODO:  ADD ERROR Condition for button when not selected.
          if(myView.getId() == R.id.buttonOk)
         {
             Intent myIntent = new Intent(SurveyPage.this, TwitterPage.class);
