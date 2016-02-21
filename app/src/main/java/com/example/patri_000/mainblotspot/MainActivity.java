@@ -29,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        /*
+          Current Location of the icon
+          C:\Program Files\Android\Android Studio\plugins\android\lib\templates\gradle-projects
+          \NewAndroidModule\root\res\mipmap-xhdpi\ic_launcher.png
+         */
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

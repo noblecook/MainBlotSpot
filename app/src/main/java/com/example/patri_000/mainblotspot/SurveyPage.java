@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -51,7 +52,11 @@ public class SurveyPage extends AppCompatActivity {
     {
         String button = getRadioButtonText();
         String thankYouText = "I see you selected " + button + " Good Choice!";
-        Toast.makeText(SurveyPage.this,thankYouText, Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(SurveyPage.this,thankYouText, Toast.LENGTH_LONG).show();
+
+
+        // TODO:  ADD ERROR Condition for button when not selected.
          if(myView.getId() == R.id.buttonOk)
         {
             Intent myIntent = new Intent(SurveyPage.this, TwitterPage.class);
